@@ -1,37 +1,29 @@
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0;
   background-image: url(./multimedia/danny-de-vylder-25v4ZFl9fDw-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 body h1 {
-  color: white;
+  color: #ffffff;
   text-align: center;
   font-family: 'Marck Script', cursive;
   font-size: 5rem;
 }
 
 body h2 {
-  color: white;
+  color: #ffffff;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2,5rem;
 }
 
 body h2 a {
-  color: white;
+  color: #ffffff;
 }
 
 body h4 {
-  color: white;
+  color: #ffffff;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2,5rem;
@@ -46,7 +38,7 @@ body h4 {
   padding: 30px;
   margin: 5rem;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.575);
+  background-color: #ffffff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -57,12 +49,22 @@ footer {
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1,6rem;
-  background-color: rgba(255, 254, 254, 0.5);
+  background-color: #ffffff;
 }
 
 footer p a {
   font-style: none;
-  color: white;
+  color: #ffffff;
+}
+
+.nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 img {
@@ -93,7 +95,6 @@ img .imagenes .carousel-inner .item .carousel {
   display: block;
 }
 
-/*GRID*/
 .contendor {
   display: -ms-grid;
   display: grid;
@@ -132,54 +133,12 @@ img .imagenes .carousel-inner .item .carousel {
   grid-area: footer;
 }
 
-.imagenes {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-row: repeat(5, 1fr);
-      grid-template-areas: "menu menu menu" "logo logo logo" "imagenes imagenes imagenes" "imagenes imagenes imagenes" "footer footer footer";
-}
-
-.imagenes {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: imagenes;
-}
-
-.contacto {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  grid-row: repeat(5, 1fr);
-      grid-template-areas: "menu menu menu menu menu" "logo logo logo logo logo" "cuadro cuadro cuadro cuadro cuadro" "cuadro cuadro cuadro cuadro cuadro" "footer footer footer footer footer";
-}
-
-.cuadro {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-area: cuadro;
-}
-
-/*RESPONSIVE*/
 @media only screen and (min-width: 480px) {
   .contendor {
         grid-template-areas: "menu menu" "logo logo" "textoindex textoindex" "textoindex textoindex" "footer footer";
   }
   .textoindex {
     font-size: 1.8rem;
-  }
-  .imagenes {
-        grid-template-areas: "menu menu" "logo logo" "imagenes" "imagenes" "footer footer";
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: block;
   }
 }
 /*# sourceMappingURL=styles.css.map */

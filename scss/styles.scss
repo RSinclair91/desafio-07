@@ -1,4 +1,4 @@
-$color: #ffffff}
+$color: #ffffff;
 body{
     background-image: url(./multimedia/danny-de-vylder-25v4ZFl9fDw-unsplash.jpg);
     background-repeat: no-repeat;
@@ -48,6 +48,13 @@ footer{
     color: $color;
     }
 }
+
+@mixin flex-row-end {
+flex-direction: row;
+align-items: flex-end;
+}
+.nav {
+    @include flex-row-end()}
 
 
 img{
